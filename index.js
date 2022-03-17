@@ -36,7 +36,7 @@ const server = app.listen(PORT, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-ad6a5.web.app/",
+    origin: ["https://chat-app-ad6a5.web.app"],
     methods: ["GET", "POST"],
     credentials: true,
   },
